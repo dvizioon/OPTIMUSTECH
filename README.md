@@ -140,7 +140,7 @@ Você pode adicionar novos testemunhos editando o arquivo `render_testimonials.j
 
 ```
 
-> [!ALERT]
+> [!WARNING]  
 >Para vc está mudando é necessario vc adicionando mais um item ao Array Aqui
 
 ```json
