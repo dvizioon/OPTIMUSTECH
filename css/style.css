@@ -1323,6 +1323,7 @@ background-color: var(--button-color);
     border-radius: 8px;
     overflow: hidden;
     display: none;
+    z-index: 999;
     font-family: var(--font-family);
 }
 
@@ -1374,7 +1375,7 @@ background-color: var(--button-color);
 }
 
 .bot-message .message-bubble {
-    background-color: #007bff;
+    background-color: var(--button-color);
     color: white;
     border-radius: 10px;
     padding: 10px;
