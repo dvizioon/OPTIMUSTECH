@@ -141,7 +141,7 @@ Você pode adicionar novos testemunhos editando o arquivo `render_testimonials.j
 ```
 
 > [!WARNING]  
->Para vc está mudando é necessario vc adicionando mais um item ao Array Aqui
+>Para vc está mudando é necessario vc adicionar mais um item ao Array Aqui
 
 ```json
 const testimonials = [
