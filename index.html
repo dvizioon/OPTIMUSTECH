@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css" media="all">
+    <title>OPTIMUSTECH 🌏</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta name="description" content="OPTIMUSTECH é uma plataforma de vagas de empregos">
+    <script defer src="./plugins/carrosel-tst.js" type="text/javascript"></script>
+    <script src="./plugins/carrosel.js" type="text/javascript"></script>
+    <script>
+      function toggleMenu() {
+            var mobileMenu = document.getElementById('mobileMenu');
+            var overlay = document.getElementById('overlay');
+            if (mobileMenu.style.display === 'block') {
+                mobileMenu.style.display = 'none';
+                overlay.style.display = 'none';
+            } else {
+                mobileMenu.style.display = 'block';
+                overlay.style.display = 'block';
+            }
+        }
+
+        function closeMenu() {
+            var mobileMenu = document.getElementById('mobileMenu');
+            var overlay = document.getElementById('overlay');
+            mobileMenu.style.display = 'none';
+            overlay.style.display = 'none';
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+    <div class="container-all">
+
+        <!-- NavBar -->
+        <div>
+            <Header class="container-header">
+                <div class="logo">
+                    <img src="./assets/Logo.svg" alt="logo.svg" />
+                    <h1>OptimusTech</h1>
+                </div>
+        
+                <!-- Menu Hambúrguer -->
+                <div class="menu-hamburger" onclick="toggleMenu()">
+                    <span class="mdi mdi-menu"></span>
+                </div>
+        
+                <!-- Navegação Global -->
+                <main class="navigation-global">
+                    <ul>
+                        <li><a href="#" class="nav-item">Home</a></li>
+                        <li><a href="#" class="nav-item">Produto</a></li>
+                        <li><a href="#" class="nav-item">Recursos</a></li>
+                        <li><a href="#" class="nav-item">Sobre nós</a></li>
+                    </ul>
+                </main>
+        
+                <!-- Container-Buttons -->
+                <div class="container-button">
+                    <button>Entrar</button>
+                    <button>Cadastrar</button>
+                </div>
+            </Header>
+        </div>
+        
+        <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+        
+        <!-- Menu Mobile -->
+        <div class="mobile-menu" id="mobileMenu">
+            <span class="close-menu" onclick="closeMenu()">×</span>
+            <ul>
+                <li><a href="#" class="nav-item">Home</a></li>
+                <li><a href="#" class="nav-item">Produto</a></li>
+                <li><a href="#" class="nav-item">Recursos</a></li>
+                <li><a href="#" class="nav-item">Sobre nós</a></li>
+            </ul>
+        </div>
+
+        <!-- Cabeçalho -->
+        <section class="container-section">
+            <p>Sobre nós</p>
+            <!-- Carrosel -->
+            <div class="container-slide">
+                <div class="slide">
+                    <div class="content">
+                        <h1>Por que somos diferentes?</h1>
+                        <p>
+                            Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de<br>todo o
+                            mundo a
+                            se
+                            concentrarem naquilo que
+                            é realmente importante para elas.
+                        </p>
+                    </div>
+                    <div class="content">
+                        <h1>Nossa Missão</h1>
+                        <p>
+                            Nossa missão é oferecer soluções inovadoras e personalizadas para cada cliente.
+                        </p>
+                    </div>
+                    <div class="content">
+                        <h1>Nossos Valores</h1>
+                        <p>
+                            Valorizamos a integridade, a transparência e a excelência em todas as nossas interações.
+                        </p>
+                    </div>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- Métricas -->
+        <section class="container-section-metrics">
+            <div class="card-metrics">
+                <div class="header-metrics">
+                    <!-- contagem -->
+                    <p></p>
+                </div>
+                <div class="header-metrics-simbolics">
+                    <h3>Projetos Concluido</h3>
+                </div>
+                <div class="body-metrics">
+
+                    <p>
+                        Nós ajudamos a construir mais de 400 projetos incríveis.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="card-metrics">
+                <div class="header-metrics">
+                    <!-- contagem -->
+                    <p></p>
+                </div>
+                <div class="header-metrics-simbolics">
+                    <h3>Colaboradores</h3>
+                </div>
+                <div class="body-metrics">
+                    <p>
+                        Temos mais de 100 colaboradores no nosso time que se preocupam com nossos clientes.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="card-metrics">
+                <div class="header-metrics">
+                    <!-- contagem -->
+                    <p></p>
+                </div>
+                <div class="header-metrics-simbolics">
+                    <h3>Downloads</h3>
+                </div>
+                <div class="body-metrics">
+                    <p>
+                        Nossos projetos que estão disponíveis em lojas já foram baixados mais de 20.000 vezes.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="card-metrics">
+                <div class="header-metrics">
+                    <!-- contagem -->
+                    <p></p>
+                </div>
+                <div class="header-metrics-simbolics">
+                    <h3>Reviews 5 estrelas</h3>
+                </div>
+                <div class="body-metrics">
+                    <p>
+                        Estamos orgulhosos de contar com mais de 500 reviews 5 estrelas em nossos produtos.
+                    </p>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <!-- Informations -->
+        <section class="container-section-information">
+            <div class="tips">
+                <p>Vagas Abertas!</p>
+            </div>
+            <div class="box-information">
+                <h1>Estamos procurando por talentos</h1>
+                <p>
+                    Somos uma equipe 100% remota com pessoas do Brasil inteiro.
+                </p>
+            </div>
+
+            <div class="container-img">
+                <img src="./assets/img/pessoas-debatendo.jpg" />
+            </div>
+
+        </section>
+
+        <!-- Seção de Produtos -->
+        <section class="container-section-products">
+            <div class="box-information">
+                <h1>Produtos</h1>
+                <p>Confira nossos softwares inovadores que estão transformando o mercado.</p>
+            </div>
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <div class="carousel">
+                        <img src="https://via.placeholder.com/300x200" alt="Software 1 - Imagem 1" class="active">
+                    </div>
+                    <div class="product-details">
+                        <h3>Software de Gestão de Projetos</h3>
+                        <p>Software completo para gerenciar projetos de forma eficiente, aumentando a produtividade da
+                            sua
+                            equipe.</p>
+                        <button class="know-more-button">Saber Mais</button>
+                        <div class="product-icons">
+                            <span class="mdi mdi-star"></span>
+                            <span class="mdi mdi-trending-up"></span>
+                            <span class="mdi mdi-rocket"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="carousel" id="carousel2">
+                        <img src="https://via.placeholder.com/300x200" alt="Software 2 - Imagem 1" class="active">
+                    </div>
+                    <div class="product-details">
+                        <h3>Software de Segurança Cibernética</h3>
+                        <p>Proteja seus dados com nossa solução avançada de segurança cibernética, ideal para empresas
+                            de
+                            todos
+                            os tamanhos.</p>
+                        <button class="know-more-button">Saber Mais</button>
+                        <div class="product-icons">
+                            <span class="mdi mdi-star"></span>
+                            <span class="mdi mdi-trending-up"></span>
+                            <span class="mdi mdi-rocket"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="carousel" id="carousel3">
+                        <img src="https://via.placeholder.com/300x200" alt="Software 3 - Imagem 1" class="active">
+                    </div>
+                    <div class="product-details">
+                        <h3>Software de Inteligência Artificial</h3>
+                        <p>Aproveite o poder da inteligência artificial para otimizar processos e tomar decisões
+                            estratégicas
+                            com nosso software avançado.</p>
+                        <button class="know-more-button">Saber Mais</button>
+                        <div class="product-icons">
+                            <span class="mdi mdi-star"></span>
+                            <span class="mdi mdi-trending-up"></span>
+                            <span class="mdi mdi-rocket"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter Vaga -->
+        <section class="container-section-Vaga">
+            <div class="box-information">
+                <h1>Vagas disponiveis</h1>
+                <p>
+                    Estilo 100% Remoto e Presencial!!!
+                </p>
+            </div>
+            <div class="container-filter-result">
+                <div class="filter-section">
+                    <h2>Aplicar Filtro</h2>
+
+                    <div class="filter">
+                        <div class="data-publicacao">
+                            <h3>Data de Publicação</h3>
+                            <input type="date" id="filtro-data-publicacao">
+                        </div>
+                        <div class="empresa">
+                            <h3>Filiais</h3>
+                            <select id="filtro-empresa">
+                                <option value="all">Todos</option>
+                                <option value="optimustech">optimustech</option>
+                            </select>
+                        </div>
+                        <div class="status">
+                            <h3>Status</h3>
+                            <select id="filtro-status">
+                                <option value="all">Todos</option>
+                                <option value="open">Disponíveis</option>
+                                <option value="close">Encerradas</option>
+                            </select>
+                        </div>
+                        <div class="estilo">
+                            <h3>Estilo</h3>
+                            <select id="filtro-estilo">
+                                <option value="all">Todos</option>
+                                <option value="remoto">Remoto</option>
+                                <option value="presencial">Presencial</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="filter-btn">Aplicar Filtro</button>
+                </div>
+
+                <div class="job-list">
+                    <div class="box-search">
+                        <label for="searchJob">Encontrar Vagas </label>
+                        <input type="text" id="searchJob" placeholder="Pesquise por vagas aqui...">
+                    </div>
+                    <h2>Vagas Mais Recentes</h2>
+                    <div id="job-container" class="box-card-list-job">
+                        <!-- <div class="job-card">
+                        <img src="https://via.placeholder.com/100" alt="Company Logo">
+                        <div class="job-info">
+                            <h3>Desenvolvedor Web</h3>
+                            <p class="tag open_vaga" style="color: white;">Disponível</p>
+                            <p><strong>Data:</strong> 23/02/2024</p>
+                            <p><strong>Estilo:</strong> Remoto</p>
+                            <p><strong>Salário:</strong> R$ 5.000,00</p>
+                            <p><strong>Horas por dia:</strong> 8</p>
+                           <div class="button-action-openVaga">
+                            <button class="apply-button">Quero me candidatar</button>
+                           </div>
+                        </div>
+                    </div> -->
+                    </div>
+                    <div class="sendEmailInfo">
+                        <span class="material-symbols-outlined">
+                            link
+                        </span>
+                        <h3>vagasOptimus@optimustech.com.br</h3>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Team -->
+        <section class="container-section-team">
+            <div class="box-information">
+                <h1>Nossa Equipe</h1>
+                <p>Conheça os talentos que fazem a OptimusTech ser o que é!</p>
+            </div>
+            <div class="team-carousel">
+                <div class="team-member box">
+                    <img src="https://avatars.githubusercontent.com/u/147283064?v=4" alt="Membro da Equipe">
+                    <div class="member-details">
+                        <h3>Daniel Estevão</h3>
+                        <p>CEO</p>
+                        <ul>
+                            <li>Desenvolvimento Web</li>
+                            <li>UI/UX Design</li>
+                            <li>Gerenciamento de Projetos</li>
+                        </ul>
+                        <div class="social-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer"><span
+                                    class="mdi mdi-linkedin"></span></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer"><span
+                                    class="mdi mdi-twitter"></span></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer"><span class="mdi mdi-git"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member box">
+                    <img src="./assets/img/Fernanda.jpeg" alt="Membro da Equipe">
+                    <div class="member-details">
+                        <h3>Fernanda Natividade</h3>
+                        <p>Conselheira</p>
+                        <ul>
+                            <li>Tesouraria</li>
+                            <li>Análise de Dados Emocionais</li>
+                            <li>Atendimento ao Cliente</li>
+                        </ul>
+                        <div class="social-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer"><span
+                                    class="mdi mdi-linkedin"></span></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer"><span
+                                    class="mdi mdi-twitter"></span></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer"><span class="mdi mdi-git"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog ou Artigos -->
+        <section class="container-section-blog">
+            <div class="box-information">
+                <h1>Blog & Artigos</h1>
+                <p>Explore nossos últimos artigos e postagens no blog sobre tecnologia e inovações.</p>
+            </div>
+            <div class="blog-articles">
+                <div class="blog-article">
+                    <img src="https://www.superti360.com.br/wp-content/uploads/2024/02/Capa-blog-tendencias-tecnologicas-2024.png"
+                        alt="Imagem do Artigo">
+                    <div class="article-details">
+                        <h3>Tendências em Tecnologia para 2024</h3>
+                        <p>Descubra as principais tendências tecnológicas que irão moldar o ano de 2024.</p>
+                        <a href="#">Leia mais</a>
+                    </div>
+                </div>
+                <div class="blog-article">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_kl933kFYP0yJIPmRBmgTNMm7mPa9jTyBmw&s"
+                        alt="Imagem do Artigo">
+                    <div class="article-details">
+                        <h3>Como a IA está Transformando Negócios</h3>
+                        <p>Veja como a inteligência artificial está revolucionando diversas indústrias.</p>
+                        <a href="#">Leia mais</a>
+                    </div>
+                </div>
+                <div class="blog-article">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb11LERFcK-yEHIlTNOrTasaRRzkqQTpD7_g&s"
+                        alt="Imagem do Artigo">
+                    <div class="article-details">
+                        <h3>Segurança Cibernética em 2024</h3>
+                        <p>As melhores práticas para proteger sua empresa contra ameaças cibernéticas.</p>
+                        <a href="#">Leia mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ (Perguntas Frequentes) -->
+        <section class="container-section-faq">
+            <div class="box-information">
+                <h1>Perguntas Frequentes</h1>
+                <p>Encontre respostas para as perguntas mais comuns sobre a OptimusTech.</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>Como posso me candidatar a uma vaga?</h3>
+                    <p class="faq-answer">Você pode se candidatar através do nosso site, clicando na vaga desejada e
+                        seguindo as instruções.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Quais são os benefícios oferecidos pela OptimusTech?</h3>
+                    <p class="faq-answer">Oferecemos um pacote de benefícios completo incluindo plano de saúde,
+                        vale-alimentação, e oportunidades de desenvolvimento profissional.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Qual é a cultura da empresa?</h3>
+                    <p class="faq-answer">Valorizamos a inovação, a colaboração e a integridade. Nossa cultura é
+                        centrada no
+                        crescimento contínuo e na inclusão.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Posso trabalhar remotamente?</h3>
+                    <p class="faq-answer">Sim, oferecemos opções de trabalho remoto para a maioria das posições.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Como é o processo de entrevista?</h3>
+                    <p class="faq-answer">Nosso processo de entrevista inclui uma triagem inicial, entrevistas técnicas
+                        e
+                        entrevistas com líderes de equipe.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- testimonia -->
+        <section class="testimonial-section">
+            <div class="box-information">
+                <p style="color: var(--font-secondary);">Veja o que nossos colaboradores falam sobre nós</p>
+            </div>
+            <div class="testimonial-carousel" id="testimonialCarousel">
+                <!-- Testemunho 1 -->
+                <div class="testimonial-card">
+                    <p>
+                        "Estamos muito satisfeitos as Soluções da OptimusTech. Eles são inovadores e sempre entregam
+                        resultados
+                        excepcionais."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://avatars.githubusercontent.com/u/147283064?v=4" alt="Autor do Testemunho">
+                        <div>
+                            <h4>Daniel Estevão</h4>
+                            <p>CEO, Empresa OptimusTech</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p>
+                        "OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos dar todo tipo de
+                        auxílio
+                        possível."
+                    </p>
+                    <div class="testimonial-author">
+
+                        <img src="./assets/img/Julia.jpg" alt="Autor do Testemunho">
+
+                        <div>
+                            <h4>Júlia Castro</h4>
+                            <p>Desenvolvedora Web</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Indicadores (bolinhas) para navegação -->
+            <div class="testimonial-dots">
+                <span class="testimonial-dot active" data-index="0"></span>
+                <span class="testimonial-dot" data-index="1"></span>
+                <!-- Adicione mais bolinhas conforme necessário -->
+            </div>
+        </section>
+
+        <section class="section-form-send">
+            <div class="box-information">
+                <h1>Acompanhe as nossas oportunidades</h1>
+                <p>Seja o primeiro a saber quando novas vagas serão abertas!</p>
+                <div class="subscribe-form">
+                    <form id="emailForm">
+                        <div class="input-group">
+                            <input type="email" id="emailInput" placeholder="Seu e-mail" required>
+                            <button type="submit">Cadastrar</button>
+                        </div>
+                        <p class="info-text">Você receberá notícias da OptimusTech em seu e-mail.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div class="chat-widget" id="chat-widget">
+            <div class="chat-header">
+                <div class="chat-title">Chatbot Prisma</div>
+                <div class="close-btn" onclick="toggleChat()">X</div>
+            </div>
+            <div class="chat-body">
+                <div class="chat-messages" id="chat-messages">
+                    <!-- Aqui vão as mensagens do chat -->
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="user-input" placeholder="Digite sua mensagem...">
+                    <button onclick="sendMessage()">Enviar</button>
+                </div>
+            </div>
+        </div>
+
+        <button class="open-chat-btn" onclick="toggleChat()"><span class="mdi mdi-web"></span></button>
+
+        <!-- Rodapé -->
+        <footer class="footer">
+            <div class="footer-content">
+
+                <div class="footer-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3117.643769380101!2d-122.40830778464848!3d37.78411997975264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580a012e78c7d%3A0x7b9a50b4c8117b13!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1624099163985!5m2!1sen!2sus"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+                <div class="footer-contact">
+                    <h2>Contato</h2>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Nome" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="Mensagem" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+
+                <div class="footer-social">
+                    <h2>Siga-nos</h2>
+                    <div class="social-icons">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <span class="mdi mdi-facebook"></span>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <span class="mdi mdi-twitter"></span>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <span class="mdi mdi-instagram"></span>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <span class="mdi mdi-linkedin"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-info-site">
+                <p>
+                    © 2022 OptimusTech. Todos os direitos reservados.
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    
+
+    <script>
+        document.querySelectorAll('.faq-item h3').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+
+
+    <script src="./plugins/active.js" type="text/javascript"></script>
+    <script src="./js/render_job.js"></script>
+    <script src="./js/render_bot.js"></script>
+    <script src="./js/render_filter.js"></script>
+</body>
+
+
+</html>
