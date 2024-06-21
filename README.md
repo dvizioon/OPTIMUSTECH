@@ -28,11 +28,14 @@ Este projeto consiste em uma aplicação web que oferece várias seções:
 - [![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - HTML5, CSS3, JavaScript
 
+## Vizualizar Projeto na Web
+[![JavaScript](https://img.shields.io/badge/click_aqui!!!-OPTIMUSTECH-brown)](https://dvizioon.github.io/OPTIMUSTECH/)
+
 ## Instalação
 Para executar localmente, siga estas etapas:
 
-1. Clone o repositório: `git clone https://github.com/seu-usuario/nome-do-repositorio.git`
-2. Navegue até o diretório: `cd nome-do-repositorio`
+1. Clone o repositório: `git clone https://github.com/dvizioon/OPTIMUSTECH.git`
+2. Navegue até o diretório: `cd OPTIMUSTECH`
 3. Abra o arquivo `index.html` no seu navegador.
 
 ## Como Usar
