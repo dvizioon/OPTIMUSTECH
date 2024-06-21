@@ -78,6 +78,97 @@ Você pode adicionar novas vagas de emprego editando o arquivo `vagas.json` conf
 > [!CAUTION]
 > É importante resaltar que essa vagas possuem um estado de "opne","close","warning"
 
+
+## Adicionar Testimonials:
+Você pode adicionar novos testemunhos editando o arquivo `render_testimonials.js` conforme o exemplo abaixo que faz uma simulação API:
+
+> [!IMPORTANT]
+> Para Editar as Vagas Você precias entrar em `js`
+
+```javascript
+
+    document.addEventListener('DOMContentLoaded', () => {
+
+    const testimonials = [
+        {
+            "text": "Estamos muito satisfeitos as Soluções da OptimusTech. Eles são inovadores e sempre entregam resultados excepcionais.",
+            "image": "https://avatars.githubusercontent.com/u/147283064?v=4",
+            "name": "Daniel Estevão",
+            "title": "CEO, Empresa OptimusTech"
+        },
+        {
+            "text": "OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos dar todo tipo de auxílio possível.",
+            "image": "./assets/img/Julia.jpg",
+            "name": "Júlia Castro",
+            "title": "Desenvolvedora Web"
+        }
+    ];
+
+    renderTestimonials(testimonials);
+
+    function showTestimonial(index) {
+        const testimonials = document.querySelectorAll('.testimonial-card');
+        const dots = document.querySelectorAll('.testimonial-dot');
+
+
+        if (index < 0 || index >= testimonials.length) {
+            return;
+        }
+
+
+        testimonials.forEach(testimonial => {
+            testimonial.style.display = 'none'; 
+        });
+        dots.forEach(dot => {
+            dot.classList.remove('active'); 
+        });
+
+
+        testimonials[index].style.display = 'block';
+        dots[index].classList.add('active');
+    }
+
+
+    const dots = document.querySelectorAll('.testimonial-dot');
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            showTestimonial(index);
+        });
+    });
+});
+
+
+```
+
+> [!ALERT]
+>Para vc está mudando é necessario vc adicionando mais um item ao Array Aqui
+
+```json
+const testimonials = [
+        {
+            "text": "Estamos muito satisfeitos as Soluções da OptimusTech. Eles são inovadores e sempre entregam resultados excepcionais.",
+            "image": "https://avatars.githubusercontent.com/u/147283064?v=4",
+            "name": "Daniel Estevão",
+            "title": "CEO, Empresa OptimusTech"
+        },
+        {
+            "text": "OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos dar todo tipo de auxílio possível.",
+            "image": "./assets/img/Julia.jpg",
+            "name": "Júlia Castro",
+            "title": "Desenvolvedora Web"
+        }
+
+        // Adicionando mais um item aqui 
+
+        {
+            "text": "Melhor BigTech",
+            "image": "https://via.placeholder.com/100",
+            "name": "Daniel Estevão",
+            "title": "Desenvolvedor JR"
+        }
+    ];
+```
+
 ## Plugins Exemplos:
 
 

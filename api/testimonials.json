@@ -1,0 +1,15 @@
+
+[
+        {
+            "text": "Estamos muito satisfeitos as Soluções da OptimusTech. Eles são inovadores e sempre entregam resultados excepcionais.",
+            "image": "https://avatars.githubusercontent.com/u/147283064?v=4",
+            "name": "Daniel Estevão",
+            "title": "CEO, Empresa OptimusTech"
+        },
+        {
+            "text": "OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos dar todo tipo de auxílio possível.",
+            "image": "./assets/img/Julia.jpg",
+            "name": "Júlia Castro",
+            "title": "Desenvolvedora Web"
+        }
+    ]
