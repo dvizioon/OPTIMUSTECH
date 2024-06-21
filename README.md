@@ -71,7 +71,6 @@ Você pode adicionar novas vagas de emprego editando o arquivo `vagas.json` conf
         "salario": 2500,
         "horas_dia": 7
     },
-    ...
 ]
 
 ```
@@ -102,7 +101,7 @@ Você pode adicionar novos testemunhos editando o arquivo `render_testimonials.j
             "name": "Júlia Castro",
             "title": "Desenvolvedora Web"
         }
-    ];
+    ]
 
     renderTestimonials(testimonials);
 
@@ -158,15 +157,13 @@ const testimonials = [
             "title": "Desenvolvedora Web"
         }
 
-        // Adicionando mais um item aqui 
-
         {
             "text": "Melhor BigTech",
             "image": "https://via.placeholder.com/100",
             "name": "Daniel Estevão",
             "title": "Desenvolvedor JR"
         }
-    ];
+    ]
 ```
 
 ## Plugins Exemplos:
