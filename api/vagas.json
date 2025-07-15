@@ -1,6 +1,6 @@
 [
     {
-        "img": "https://via.placeholder.com/100",
+        "img": "https://placehold.co/100",
         "empresa": "optimustech",
         "nome": "Desenvolvedor Web JR",
         "disponibilidade": "open",
@@ -10,7 +10,7 @@
         "horas_dia": 8
     },
     {
-        "img": "https://via.placeholder.com/100",
+        "img": "https://placehold.co/100",
         "empresa": "optimustech",
         "nome": "Designer UX/UI",
         "disponibilidade": "close",
@@ -20,7 +20,7 @@
         "horas_dia": 7
     },
     {
-        "img": "https://via.placeholder.com/100",
+        "img": "https://placehold.co/100",
         "empresa": "optimustech",
         "nome": "Analista de Dados",
         "disponibilidade": "warning",
@@ -30,7 +30,7 @@
         "horas_dia": 6
     },
     {
-        "img": "https://via.placeholder.com/100",
+        "img": "https://placehold.co/100",
         "empresa": "optimustech",
         "nome": "Desenvolvedor Back End",
         "disponibilidade": "open",
